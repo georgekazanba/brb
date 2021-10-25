@@ -45,10 +45,12 @@ body{
     width:95%;
 }
 .content{
-    float:left; 
     margin-right:0px;
     margin-left:50px;
     align-items:center;
+    background: #d2d0d2;
+    height: auto;
+    padding: 1% 4%;
 }
 .sidebar{
     float:left;
