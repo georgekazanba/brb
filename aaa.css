@@ -72,7 +72,7 @@ body{
     font-size:27px;
     display:flex;
     align-items:center; 
-    text-align:center;
+    justify-content:center;
     width:95%;
     margin-left:3%;
 }
