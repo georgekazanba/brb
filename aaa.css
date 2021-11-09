@@ -76,3 +76,7 @@ body{
     float:right;
     margin-left:3%;
 }
+.jakor{
+    justify-content:space-between;
+    align-items:center;
+}
