@@ -83,5 +83,5 @@ body{
     font-size:14px;
 }
 h1{
-    font-size:1em;
+    font-size:max(1em, min(4em, calc(100vw * 4 / 75)));
 }
