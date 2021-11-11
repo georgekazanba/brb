@@ -37,7 +37,7 @@
             function button(){
                 score++;
                 console.log(score);
-                document.getElementByTagName("h3")[0].firstChildData="Вы нажали "+score+" раз.";
+                document.getElementByTagName("h3")[0].firstChild.data="Вы нажали "+score+" раз.";
             }
             </script>
             <center><button id="btn" onclick="button()">Кстати, вот кликер, чтобы было чем заняться</button></center>
