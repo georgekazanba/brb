@@ -35,7 +35,8 @@
             <center><button style="cursor:pointer;" onclick="clickBtn()">Имитация интерактива</button></center>
             <center><h4 id="score">Вы нажали 0 раз</h4></center>
             <script type="text/javascript">
-                var record = parseInt(document.getElementsById("record"));
+                var record = document.getElementsById("record");
+                record = parseInt(record);
                 var score = record;
                 function clickBtn() {
                   score++;
