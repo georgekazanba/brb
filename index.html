@@ -32,6 +32,8 @@
             <span>ЕСТЬ И ДЕТСКАЯ ПРОДУКЦИЯ, ВРОДЕ ЧЕШЕК ДЛЯ ДЕТЕЙ. ИЛИ МОЖНО ЗАКАЗАТЬ <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">ТУТ</a> НАШ ОФИЦИАЛЬНЫЙ САЙТ ЯВЛЯЕТСЯ ТОЛЬКО КАТАЛОГОМ, ЗАКАЗАТЬ НАШУ ПРОДУКЦИЮ МОЖНО В ДРУГИХ ИНТЕРНЕТ МАГАЗИНАХ.</span>
             <h3>ПЛАТИТЕ НАМ.</h3>
             <center><video controls loop autoplay width="70%" height="70%"><source src="img/abibas.mp4" type="video/mp4"></source></video></center>
+            <center><button onclick="clickBtn()">Click</button></center>
+            <center><h3><p id="score">Вы нажали 0 раз</p></h3></center>
             <script type="text/javascript">
                 var score = 0;
                 function clickBtn() {
@@ -40,8 +42,6 @@
                   document.getElementsById("score")[0].firstChild.data = "Clicks: " + score;
                 }
             </script>
-            <center><button id="btn" onclick="clickBtn();">Кстати, вот кликер, чтобы было чем заняться</button></center>
-            <center><h3 id="score">Вы нажали 0 раз</h3></center>
             <p>
                 Значение:
                 одежда - подделка под фирму «Adidas» с лейблом «Adidas».</br>
