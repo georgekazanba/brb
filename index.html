@@ -35,7 +35,7 @@
             <center><button style="cursor:pointer;" onclick="clickBtn()">Имитация интерактива</button></center>
             <center><h4 id="score">Вы нажали 0 раз</h4></center>
             <script type="text/javascript">
-                var record = document.getElementsById("record")
+                var record = parseInt(document.getElementsById("record"));
                 var score = record;
                 function clickBtn() {
                   score++;
@@ -68,7 +68,7 @@
     </div>
     <div id="footer">
             <h3>(c) A818A5 1337-2077</h3>
-            <h3>Ваш счёт -<p id="record">0</p></h4>
+            <h3>Ваш счёт: <span id="record">0</span></h4>
             <!--LiveInternet counter-->
             <p>
                 <a href="https://www.liveinternet.ru/click" target="_blank">
