@@ -33,13 +33,13 @@
             <h3>ПЛАТИТЕ НАМ.</h3>
             <center><video controls loop autoplay width="70%" height="70%"><source src="img/abibas.mp4" type="video/mp4"></source></video></center>
             <center><button onclick="clickBtn()">Click</button></center>
-            <center><h3><p id="score">Вы нажали 0 раз</p></h3></center>
+            <center><h4 id="score">Вы нажали 0 раз</h4></center>
             <script type="text/javascript">
                 var score = 0;
                 function clickBtn() {
                   score++;
                   console.log(score);
-                  document.getElementsById("score")[0].firstChild.data = "Clicks: " + score;
+                  document.getElementsByTagName("h4")[0].firstChild.data = "Вы нажали " + score + " раз.";
                 }
             </script>
             <p>
