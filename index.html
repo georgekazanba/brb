@@ -39,8 +39,8 @@
                 function clickBtn() {
                   score++;
                   console.log(score);
-                  if ((score%10==2 || score%10==3 || score%10==4) || !(score%100>=11 || score%100<=14)) {document.getElementsByTagName("h4")[0].firstChild.data = "Вы нажали " + score + " раза.";}
-                  else {document.getElementsByTagName("h4")[0].firstChild.data = "Вы нажали " + score + " раз.";}
+                  if ((score%100>=11 || score%100<=14) || !(score%10>=2 || score%10<=10)) {document.getElementsByTagName("h4")[0].firstChild.data = "Вы нажали " + score + " раз.";}
+                  else {document.getElementsByTagName("h4")[0].firstChild.data = "Вы нажали " + score + " раза.";}
                 }
             </script>
             <p>
