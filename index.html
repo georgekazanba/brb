@@ -74,14 +74,36 @@
             <input type="text" name="name" placeholder="Ваше имя">
             <input type="text" name="email" placeholder="Ваша почта">
             <input type="text" name="phone" placeholder="Ваш телефон">
-            <input type="submit" value="Отправить">
+            <button style="cursor:pointer;" onclick="clickBtnForm()">Отправить</button>
         </form>
         <script type="text/javascript">
-            var xhr = new XMLHttpRequest();
-            var body = 'name=' + encodeURIComponent(name);
-            xhr.open("POST", '/submit', true);
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-            alert (body);
+            function clickBtnForm() {
+                if (score==0){
+                    alert ("Шутка, нам ваши данные не нужны, нам их некому продать. Кстати, вы не нажимали на ту кнопку? Вы только открыли сайт? Если так, то странно.");
+                } else if (score >= 1 && score <= 10){
+                    alert ("Шутка, нам ваши данные не нужны, нам их некому продать. Кстати, только " + score + " нажатий? Ладно.");
+                } else if (score >= 11 && score <= 100){
+                    alert ("Шутка, нам ваши данные не нужны, нам их некому продать. Кстати, " + score + " нажатий? Ладно.");
+                } else if (score >= 101 && score <= 500){
+                    alert ("Шутка, нам ваши данные не нужны, нам их некому продать.");
+                }
+                } else if (score >= 501 && score <= 1000){
+                    alert ("Хватит.");
+                }
+                } else if (score >= 1001 && score <= 2000){
+                    alert ("Остановитесь.");
+                }
+                } else if (score >= 1001 && score <= 2000){
+                    alert ("Серьёзно, хватит.");
+                }
+                } else if (score >= 2001 && score <= 3000){
+                    alert ("Есть кликеры получше, тот же Cookie Clicker. Зачем здесь тратить время?");
+                }
+
+                } else if (score >= 3001){
+                    alert ("Я ухожу.");
+                }
+            }
         </script>
     </div>
     <div id="footer">
