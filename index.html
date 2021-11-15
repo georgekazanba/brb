@@ -69,6 +69,19 @@
                 <li><a href="https://www.youtube.com/watch?v=eYuUAGXN0KM">F&S</a></li>
             </ul>
         </div>
+        <form action="/submit" method="post">
+            <h3>Подпишитесь на нашу рассылку новостей о новой продукции и прочем</h3>
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input type="text" name="email" placeholder="Ваша почта">
+            <input type="text" name="phone" placeholder="Ваш телефон">
+        </form>
+        <script type="text/javascript">
+            var xhr = new XMLHttpRequest();
+            var body = 'name=' + encodeURIComponent(name);
+            xhr.open("POST", '/submit', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            alert (body);
+        </script>
     </div>
     <div id="footer">
             <h3>(c) A818A5 1337-2077</h3>
