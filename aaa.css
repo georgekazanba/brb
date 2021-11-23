@@ -85,3 +85,7 @@ body{
 h1{
     font-size:max(1em, min(4em, calc(100vw * 4 / 75)));
 }
+a{
+    text-decoration: none;
+    color:#515190;
+}
