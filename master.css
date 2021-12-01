@@ -11,7 +11,7 @@ body{
     padding: 2% 0 0 0;
     width: 100%;
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
 }
 .navigation{
     background: #a2a2a2;
