@@ -12,6 +12,7 @@ body{
     width: 100%;
     display:flex;
     justify-content:space-around;
+    align-items:center;
 }
 .navigation{
     background: #a2a2a2;
