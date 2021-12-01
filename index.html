@@ -103,6 +103,16 @@
         </form>
         <button style="cursor:pointer;" onclick="clickBtnForm()">Отправить</button>
         <script src="//ulogin.ru/js/ulogin.js"></script>
+        <script type="text/javascript">
+            function preview(token){
+                $.getJSON("//ulogin.ru/token.php?host=" + encodeURIComponent(location.toString()) + "&token=" + token + "&callback=?", function(data){
+                    data = $.parseJSON(data.toString());
+                    if(!data.error){
+                        alert("Привет, "+data.first_name+" "+data.last_name+"!");
+                    }
+                });
+            }
+        </script>
         <div id="uLogin_d3a7e79d" data-uloginid="d3a7e79d"></div>
         <h3>Поделитесь нашим сайтом везде ежжи</h3>
         <script src="https://yastatic.net/share2/share.js"></script>
