@@ -11,11 +11,20 @@
     <link rel="stylesheet" href="master.css">
 </head>
 <body>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+    <script type="text/javascript">
+    VK.init({apiId: 8014808});
+    </script>
     <div id="header">
         <div class="logo">
             <img src="img/abibas.png" class="logo-img" height=100px alt="интернет abibas купить онлайн магазин одежда официальный сайт">
             <span class="logo-title"><h1>ИНТЕРНЕТ МАГАЗИН ABIBAS</h1></span>
         </div>
+        <!-- VK Widget -->
+        <div id="vk_auth"></div>
+        <script type="text/javascript">
+            VK.Widgets.Auth("vk_auth", {"onAuth":function(data) {alert('user '+data['uid']+' authorized');}});
+        </script>
     </div>
     <div class="navigation">
         <div class="jakor"><a href="#">ГJIАBHAR</a></div>
