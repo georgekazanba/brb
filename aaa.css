@@ -89,3 +89,9 @@ a{
     text-decoration: none;
     color:#515190;
 }
+.wrapper2{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    width:600px;
+}
