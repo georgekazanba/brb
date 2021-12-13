@@ -71,7 +71,6 @@ a{
     color:#515190;
 }
 .wrapper2{
-    width:auto;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
